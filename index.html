@@ -3,199 +3,247 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#315c45">
-  <meta name="description" content="راهنمای عضویت و آشنایی با باشگاه کتاب‌خوانی رویش">
-  <title>باشگاه کتاب‌خوانی رویش</title>
+  <meta name="theme-color" content="#285b42">
+  <meta name="description" content="شرایط و شیوهٔ عضویت در باشگاه کتاب‌خوانی رویش">
+  <title>باشگاه کتاب‌خوانی رویش | آیین‌نامه عضویت</title>
   <style>
     :root {
-      --green: #2f7049;
-      --green-dark: #205438;
-      --green-soft: #e4f1e5;
-      --cream: #faf8f1;
+      --forest: #285b42;
+      --forest-deep: #1d4632;
+      --leaf: #6f9e70;
+      --leaf-light: #e8f0e5;
+      --mint: #f1f6ed;
+      --cream: #fbf9f2;
       --paper: #fffefa;
-      --ink: #29352d;
-      --muted: #68756b;
-      --line: #dfe9dc;
-      --gold: #b58b45;
-      --shadow: 0 14px 38px rgba(38, 82, 51, .10);
+      --ink: #2e3931;
+      --muted: #69766c;
+      --line: #e5eadd;
+      --gold: #bd9857;
+      --shadow: 0 14px 38px rgba(36, 73, 48, .075);
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    ::selection { background: #d8e7d6; color: var(--green-dark); }
     body {
       margin: 0;
-      background:
-        radial-gradient(ellipse at 8% 5%, rgba(133, 184, 133, .38), transparent 26rem),
-        radial-gradient(ellipse at 94% 42%, rgba(188, 220, 183, .31), transparent 28rem),
-        radial-gradient(ellipse at 50% 100%, rgba(155, 197, 145, .23), transparent 31rem),
-        var(--cream);
       color: var(--ink);
+      background:
+        radial-gradient(circle at 5% 9%, rgba(169, 199, 157, .28), transparent 23rem),
+        radial-gradient(circle at 96% 34%, rgba(213, 225, 195, .32), transparent 25rem),
+        linear-gradient(180deg, #f7f7ee 0%, var(--cream) 38%, #f7f8f1 100%);
       font-family: Tahoma, "Segoe UI", Arial, sans-serif;
-      line-height: 2;
       font-size: 16px;
+      line-height: 2.05;
     }
-    .wrap { width: min(900px, calc(100% - 32px)); margin: 0 auto; }
-    header {
-      padding: 72px 20px 60px;
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 48px 20px 76px;
       text-align: center;
       color: #fff;
-      background: linear-gradient(145deg, #1f5739, #388052 52%, #68a36d);
-      border-radius: 0 0 38px 38px;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 18px 42px rgba(36, 91, 55, .22);
+      background:
+        radial-gradient(ellipse at 15% 0%, rgba(255,255,255,.12), transparent 24rem),
+        linear-gradient(132deg, #1e4b35 0%, #2d6847 52%, #56865b 100%);
+      border-radius: 0 0 42px 42px;
+      box-shadow: 0 18px 44px rgba(31, 76, 50, .18);
     }
-    header::before, header::after {
-      content: "✦";
-      position: absolute;
-      color: rgba(255,255,255,.13);
-      font-size: 104px;
-      pointer-events: none;
-    }
-    header::before { top: 2px; right: 7%; transform: rotate(-12deg); }
-    header::after { bottom: -34px; left: 8%; font-size: 145px; }
-    .brand-mark {
-      display: inline-grid;
-      place-items: center;
-      width: 68px;
-      height: 68px;
-      margin-bottom: 8px;
-      border: 1px solid rgba(255,255,255,.28);
-      border-radius: 50%;
-      background: linear-gradient(145deg, rgba(255,255,255,.18), rgba(255,255,255,.06));
-      font-size: 36px;
-      line-height: 1.4;
-      box-shadow: 0 6px 22px rgba(0,0,0,.08);
-    }
-    h1 { margin: 8px 0 2px; font-size: clamp(30px, 6vw, 46px); letter-spacing: -.5px; text-shadow: 0 2px 12px rgba(0,0,0,.12); }
-    .slogan { margin: 12px auto 0; max-width: 620px; color: #edf4e9; font-size: clamp(15px, 3vw, 19px); }
-    .intro {
-      margin: 28px auto 0;
-      max-width: 720px;
-      background: var(--paper);
-      border: 1px solid #dce9d9;
-      border-radius: 22px;
-      padding: 26px clamp(18px, 4vw, 36px);
-      box-shadow: var(--shadow);
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .intro::before {
+    .hero::before, .hero::after {
       content: "";
       position: absolute;
-      top: 0;
-      right: 12%;
-      left: 12%;
+      pointer-events: none;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 50%;
+    }
+    .hero::before {
+      width: 260px; height: 260px;
+      top: -155px; right: -65px;
+      box-shadow: 0 0 0 24px rgba(255,255,255,.025), 0 0 0 50px rgba(255,255,255,.02);
+    }
+    .hero::after {
+      width: 210px; height: 210px;
+      bottom: -155px; left: 6%;
+      box-shadow: 0 0 0 22px rgba(255,255,255,.025), 0 0 0 45px rgba(255,255,255,.02);
+    }
+    .hero-inner { position: relative; z-index: 1; }
+    .organizer {
+      margin: 0 auto 16px;
+      color: #e4eddf;
+      font-size: 14px;
+      letter-spacing: .1px;
+    }
+    .emblem {
+      width: 76px; height: 76px;
+      display: grid; place-items: center;
+      margin: 0 auto 10px;
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 26px 26px 26px 8px;
+      background: rgba(255,255,255,.11);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.14), 0 10px 24px rgba(0,0,0,.08);
+      font-size: 39px;
+      transform: rotate(-3deg);
+    }
+    h1 {
+      margin: 9px 0 0;
+      font-size: clamp(30px, 5.5vw, 45px);
+      line-height: 1.5;
+      letter-spacing: -.6px;
+      text-shadow: 0 3px 15px rgba(0,0,0,.14);
+    }
+    .hero-rule {
+      width: 76px; height: 3px;
+      margin: 18px auto 0;
+      border-radius: 10px;
+      background: linear-gradient(90deg, transparent, #e4c98e, transparent);
+    }
+    .container { width: min(900px, calc(100% - 34px)); margin: 0 auto; }
+    .welcome {
+      position: relative;
+      margin: -34px auto 30px;
+      padding: 27px clamp(19px, 4vw, 38px);
+      max-width: 790px;
+      text-align: center;
+      background: var(--paper);
+      border: 1px solid rgba(222, 232, 216, .95);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+    .welcome::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 15%; right: 15%;
       height: 3px;
       border-radius: 0 0 8px 8px;
-      background: linear-gradient(90deg, transparent, #6f9b70, #b58b45, #6f9b70, transparent);
+      background: linear-gradient(90deg, transparent, var(--leaf), var(--gold), var(--leaf), transparent);
     }
-    .intro p { margin: 0 0 12px; }
-    .intro p:last-child { margin-bottom: 0; color: var(--muted); }
-    main { padding: 32px 0 58px; }
+    .welcome p { margin: 7px 0; }
+    .welcome p:first-child { color: var(--forest); font-weight: 700; font-size: 18px; }
+    .welcome p:last-child { color: var(--muted); font-size: 14px; margin-top: 14px; }
+    main { padding: 0 0 54px; }
     .section {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      padding: 23px clamp(17px, 4vw, 32px);
-      margin: 18px 0;
-      box-shadow: 0 7px 24px rgba(38, 82, 51, .065);
-      background: linear-gradient(115deg, rgba(242, 249, 240, .48), var(--paper) 34%);
-      scroll-margin-top: 20px;
       position: relative;
+      margin: 17px 0;
+      padding: 23px clamp(18px, 4vw, 34px) 24px;
       overflow: hidden;
+      background: linear-gradient(115deg, rgba(245, 249, 241, .72), var(--paper) 42%);
+      border: 1px solid var(--line);
+      border-radius: 21px;
+      box-shadow: 0 7px 23px rgba(42, 73, 48, .045);
       transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
     }
     .section::before {
       content: "";
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 0; bottom: 0; right: 0;
       width: 5px;
-      height: 100%;
-      background: linear-gradient(180deg, #398451, #78b77b 58%, #c3dcae);
-      opacity: .8;
+      background: linear-gradient(180deg, #4e855b, #9bbd8e 65%, #d7c28d);
+      opacity: .9;
     }
     .section:hover {
       transform: translateY(-2px);
-      border-color: #bcd8bc;
-      box-shadow: 0 13px 30px rgba(38, 82, 51, .11);
+      border-color: #d2e0cf;
+      box-shadow: 0 12px 28px rgba(42, 73, 48, .075);
     }
     h2 {
-      color: var(--green);
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 13px;
+      padding: 0 0 11px;
+      color: var(--forest);
       font-size: 20px;
       line-height: 1.8;
-      margin: 0 0 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #dcebdd;
+      border-bottom: 1px solid #e9eee4;
     }
+    h2 .heading-text { display: inline; }
     p { margin: 8px 0; }
-    ul, ol { padding-right: 24px; margin: 8px 0; }
-    li { padding-right: 3px; margin: 3px 0; }
-    .numbered { list-style: decimal; }
-    li::marker { color: #438d58; }
-    .numbered li::marker { color: var(--gold); font-weight: 700; }
-    .highlight {
-      background: linear-gradient(100deg, #eaf5e8, #e1f0e1);
-      border-right: 4px solid #4b9a61;
-      padding: 12px 16px;
+    ul, ol { margin: 8px 0; padding-right: 25px; }
+    li { padding-right: 3px; margin: 5px 0; }
+    li::marker { color: #65916a; }
+    ol li::marker { color: var(--gold); font-weight: 700; }
+    .reminder {
+      margin: 14px 0 12px;
+      padding: 9px 14px;
+      color: var(--forest-deep);
+      background: #edf4e9;
+      border-right: 3px solid #77a477;
       border-radius: 10px;
-      margin: 14px 0;
-    }
-    .fee {
-      color: var(--green-dark);
       font-weight: 700;
-      background: #f5f0e3;
-      border-radius: 10px;
-      padding: 2px 8px;
-      white-space: nowrap;
+    }
+    .closing {
+      margin: 26px auto 0;
+      padding: 28px clamp(18px, 4vw, 36px);
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(135deg, #285b42, #477a51);
+      border-radius: 24px;
+      box-shadow: 0 14px 32px rgba(38, 84, 53, .14);
+    }
+    .closing p { margin: 7px 0; }
+    .closing .slogan {
+      margin-top: 16px;
+      color: #f3e6c8;
+      font-weight: 700;
+      font-size: 18px;
     }
     footer {
+      padding: 22px 16px 32px;
       text-align: center;
-      padding: 26px 16px 40px;
-      color: var(--green);
+      color: var(--forest);
       font-weight: 700;
-      border-top: 1px solid rgba(49,92,69,.16);
-      background: linear-gradient(90deg, rgba(225,241,222,.62), rgba(255,255,255,.48), rgba(225,241,222,.62));
+      font-size: 14px;
     }
-    footer .leaf { font-size: 22px; }
+    footer span { display: block; font-size: 23px; margin-bottom: 2px; }
     @media (max-width: 600px) {
-      body { font-size: 15px; line-height: 1.95; }
-      header { padding: 50px 16px 42px; border-radius: 0 0 26px 26px; }
-      .brand-mark { width: 60px; height: 60px; font-size: 32px; }
-      .section { padding-top: 19px; padding-bottom: 19px; border-radius: 17px; }
-      h2 { font-size: 18px; }
+      body { font-size: 14px; line-height: 1.98; }
+      .hero { padding: 38px 16px 62px; border-radius: 0 0 29px 29px; }
+      .emblem { width: 66px; height: 66px; font-size: 34px; border-radius: 22px 22px 22px 7px; }
+      .organizer { font-size: 12px; }
+      .container { width: min(100% - 24px, 900px); }
+      .welcome { margin-top: -28px; padding: 23px 17px; border-radius: 19px; }
+      .welcome p:first-child { font-size: 16px; }
+      .section { margin: 13px 0; padding: 18px 17px 20px; border-radius: 17px; }
+      h2 { font-size: 17px; gap: 7px; }
+      ul, ol { padding-right: 21px; }
+      .closing { padding: 24px 17px; border-radius: 19px; }
+      .closing .slogan { font-size: 16px; }
+    }
+    @media print {
+      body { background: #fff; }
+      .hero, .closing { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .section, .welcome { box-shadow: none; break-inside: avoid; }
+      .section:hover { transform: none; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="brand-mark" aria-hidden="true">🌱</div>
-    <h1>باشگاه کتاب‌خوانی رویش</h1>
-    <p class="slogan">هر صفحه، قدمی به‌سوی فردا؛ هر کتاب، فرصتی برای رویش.</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="organizer">کتابخانهٔ مکتب جعفری شیراز برگزار می‌کند:</p>
+      <div class="emblem" aria-hidden="true">🌱</div>
+      <h1>باشگاه کتاب‌خوانی رویش</h1>
+      <div class="hero-rule"></div>
+    </div>
   </header>
 
-  <div class="wrap">
-    <section class="intro">
-      <p>سلام و خوش‌آمدید به باشگاه کتابخوانی رویش! 🌱</p>
+  <div class="container">
+    <section class="welcome">
+      <p>سلام و خوش‌آمدید به باشگاه کتاب‌خوانی رویش! 🌱</p>
       <p>خیلی خوشحالیم که می‌خواهید به جمع «رویش» بپیوندید. سپاس‌گزاریم که برای همراهی با ما و گسترش فرهنگ کتاب‌خوانی قدم برداشتید. امیدواریم در کنار هم روزهای پرباری داشته باشیم.</p>
       <p>قبل از ثبت‌نام، لطفاً شرایط و شیوهٔ فعالیت باشگاه را مطالعه کنید تا با برنامه‌ها و قوانین آن آشنا شوید.</p>
     </section>
 
     <main>
       <section class="section">
-        <h2>📚 ۱. کتاب، انتخاب شماست!</h2>
-        <p>در رویش قرار نیست همه یک کتاب بخوانند یا سلیقهٔ یکسانی داشته باشند!</p>
+        <h2>📚 <span class="heading-text">۱. کتاب، انتخاب شماست!</span></h2>
+        <p>در باشگاه رویش قرار نیست همهٔ اعضا یک کتاب مشترک بخوانند؛ هرکس مسیر مطالعاتی خودش را دنبال می‌کند!</p>
         <ul>
-          <li>می‌توانید کتاب دلخواه خودتان را انتخاب کنید یا سراغ کتاب‌های معرفی‌شده در کانال کتابخانهٔ مکتب جعفری شیراز بروید.</li>
-          <li>در انتخاب موضوع، نویسنده و تعداد کتاب‌ها محدودیتی ندارید.</li>
+          <li>کتاب انتخابی شما باید در سامانهٔ سامان (SamanPL.ir)، سامانهٔ نهاد کتابخانه‌های عمومی کشور، ثبت شده و مورد تأیید باشد. در این سامانه می‌توانید از میان مجموعه‌ای متنوع از کتاب‌ها، عنوان موردعلاقهٔ خود را انتخاب کنید.</li>
+          <li>کتاب‌های معرفی‌شده در کانال کتابخانهٔ مکتب جعفری شیراز، می‌توانند انتخاب‌های خوبی برای شما باشند.</li>
           <li>کتاب‌های چاپی، الکترونیکی و صوتی همگی پذیرفته می‌شوند.</li>
         </ul>
       </section>
 
       <section class="section">
-        <h2>📖 ۲. قدم‌های کوچک، استمرار بزرگ</h2>
+        <h2>📖 <span class="heading-text">۲. قدم‌های کوچک، استمرار بزرگ</span></h2>
         <p>برای اینکه مطالعه به بخشی از برنامهٔ روزانه‌مان تبدیل شود، یک برنامهٔ تدریجی در نظر گرفته‌ایم:</p>
         <ul>
           <li>۱۵ روز نخست: روزانه حداقل ۵ صفحه.</li>
@@ -205,16 +253,17 @@
       </section>
 
       <section class="section">
-        <h2>🧩 ۳. مأموریت‌های روزانه؛ کمی فکر، کمی خلاقیت!</h2>
+        <h2>🧩 <span class="heading-text">۳. هر روز، یک مأموریت!</span></h2>
         <p>هر روز یک مأموریت مطالعاتی در کانال منتشر می‌شود که پاسخ‌دادن به آن برای همهٔ اعضا الزامی است.</p>
         <p>نگران نباشید! قرار نیست با سؤال‌های پیچیده و امتحان‌های سخت روبه‌رو شوید؛ مأموریت‌ها فرصتی هستند تا کمی دقیق‌تر به کتاب نگاه کنیم، درباره‌اش فکر کنیم و برداشت خودمان را با دیگران به اشتراک بگذاریم.</p>
       </section>
 
       <section class="section">
-        <h2>📝 ۴. گزارش روزانه؛ ثبت قدم‌های رویش</h2>
+        <h2>📝 <span class="heading-text">۴. گزارش روزانه؛ ثبت قدم‌های رویش</span></h2>
         <p>پس از مطالعه، باید گزارش روزانهٔ خود را در قسمت نظرات (کامنت‌های) پست همان روز در کانال باشگاه ارسال کنید.</p>
+        <p class="reminder">یادآوری: پیام‌رسان بلهٔ خود را به‌روزرسانی بفرمایید!</p>
         <p>گزارش شما باید شامل این موارد باشد:</p>
-        <ol class="numbered">
+        <ol>
           <li>نام و نام خانوادگی</li>
           <li>نام کتاب در حال مطالعه</li>
           <li>تعداد صفحات مطالعه‌شده</li>
@@ -224,13 +273,13 @@
       </section>
 
       <section class="section">
-        <h2>⏰ ۵. نظم در مطالعه؛ همراه با فرصت جبران</h2>
+        <h2>⏰ <span class="heading-text">۵. نظم در مطالعه؛ همراه با فرصت جبران</span></h2>
         <p>برای انجام سهمیهٔ روزانه، ۲۴ ساعت فرصت دارید. اگر به هر دلیلی نتوانستید در این بازه سهمیهٔ خود را تکمیل کنید، ۲۴ ساعت دیگر برای جبران فرصت خواهید داشت.</p>
         <p>در صورت تکمیل‌نشدن سهمیه در مهلت دوم، یک اخطار ثبت می‌شود. توجه داشته باشید که دریافت سه اخطار در طول یک ماه، به حذف عضویت از باشگاه منجر خواهد شد.</p>
       </section>
 
       <section class="section">
-        <h2>🏅 ۶. امتیاز بگیر، نشان بگیر!</h2>
+        <h2>🏅 <span class="heading-text">۶. بخوان، امتیاز بگیر!</span></h2>
         <p>در رویش، استمرار و تلاش شما دیده می‌شود:</p>
         <ul>
           <li>انجام سهمیهٔ روزانه: ۵ امتیاز.</li>
@@ -242,33 +291,36 @@
       </section>
 
       <section class="section">
-        <h2>🎁 ۷. جایزه‌ای برای همراهی!</h2>
-        <p>در پایان هر ماه، میان تمام اعضایی که تا پایان آن ماه عضویتشان برقرار است، قرعه‌کشی برگزار می‌شود و یک نفر به‌عنوان برندهٔ جایزه انتخاب خواهد شد.</p>
+        <h2>🎁 <span class="heading-text">۷. برندهٔ جایزه باش!</span></h2>
+        <p>شاید برندهٔ جایزهٔ این ماه، شما باشید!</p>
+        <p>در پایان هر ماه، جوایز ویژه‌ای به اعضای باشگاه اهدا می‌شود تا تلاش و همراهی شما با رویش، با خاطره‌ای شیرین همراه شود.</p>
+        <p>پس مطالعه کنید، همراه رویش بمانید و شانس خود را برای برنده‌شدن امتحان کنید!</p>
       </section>
 
       <section class="section">
-        <h2>🌿 ۸. دورهمی‌های دوستانه و برنامه‌های خلاقانه</h2>
+        <h2>🌿 <span class="heading-text">۸. فراتر از کتاب‌خوانی!</span></h2>
         <p>رویش فقط به خواندن و گزارش‌دادن محدود نمی‌شود! در کنار برنامهٔ اصلی، دورهمی‌های دوستانه، نشست‌های کتاب‌خوانی، معرفی و تبادل کتاب و فعالیت‌های فرهنگی و خلاقانه نیز خواهیم داشت.</p>
         <p>اعضا می‌توانند در ایده‌پردازی، طراحی و اجرای این برنامه‌ها مشارکت کنند.</p>
       </section>
 
       <section class="section">
-        <h2>👨‍👩‍👧 ۹. شرایط عضویت و همراهی</h2>
+        <h2>👨‍👩‍👧 <span class="heading-text">۹. عضویت و همراهی</span></h2>
         <ul>
           <li>عضویت برای تمام علاقه‌مندان به کتاب و مطالعه، از گروه‌های سنی مختلف، امکان‌پذیر است.</li>
+          <li>در رویش، اعضای یک خانواده می‌توانند با پرداخت یک حق عضویت مشترک همراه ما باشند؛ البته ثبت‌نام و گزارش مطالعاتی هر فرد باید به‌صورت جداگانه انجام شود.</li>
           <li>حق عضویت ماهانه ۵۰ هزار تومان است.</li>
-          <li>امکان عضویت خانوادگی نیز وجود دارد و اعضای یک خانواده می‌توانند به‌صورت مشترک در باشگاه عضو شوند و یک حق عضویت پرداخت کنند.</li>
         </ul>
       </section>
 
-      <section class="intro">
+      <section class="closing">
         <p>اگر همهٔ موارد را مطالعه کرده‌اید و با شرایط عضویت موافق هستید، خوشحال می‌شویم شما را در جمع رویش ببینیم.</p>
-        <p><strong>رویش؛ هر روز یک قدم، هر کتاب یک جهان! 🌱</strong></p>
+        <p class="slogan">رویش؛ از دانایی تا توانایی، از استعداد تا شکوفایی 🌱</p>
       </section>
     </main>
   </div>
+
   <footer>
-    <div class="leaf">🌱</div>
+    <span>🌱</span>
     باشگاه کتاب‌خوانی رویش
   </footer>
 </body>
